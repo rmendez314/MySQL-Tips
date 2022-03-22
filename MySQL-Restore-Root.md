@@ -6,15 +6,11 @@ sudo services mysqld stop
 sudo vi /etc/mysql/my.cnf
 
 #### Add this to the file and save it
-
+```
 \# For debugging and recovery only \#
-<br>
 [mysqld]
-<br>
 skip-grant-tables
-<br>
 skip-networking
-<br>
 \###################################
 
 sudo services mysql restart
