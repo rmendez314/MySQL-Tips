@@ -8,9 +8,13 @@ sudo vi /etc/mysql/my.cnf
 #### Add this to the file and save it
 
 \# For debugging and recovery only \#
+<br>
 [mysqld]
+<br>
 skip-grant-tables
+<br>
 skip-networking
+<br>
 \###################################
 
 sudo services mysql restart
@@ -24,4 +28,5 @@ UPDATE mysql.user SET Grant_priv='Y', Super_priv='Y' WHERE User='root'; FLUSH PR
 GRANT ALL ON *.* TO 'root'@'localhost';
 
 ## If all privileges are restored:
+
 Go ahead and sudo vi /etc/mysql/my.cnf and erase or comment the lines you added and restart mysql service.
