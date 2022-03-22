@@ -8,11 +8,11 @@ sudo vi /etc/mysql/my.cnf
 ```
 #### Add this to the file and save it
 ```
-\# For debugging and recovery only \#
+# For debugging and recovery only #
 [mysqld]
 skip-grant-tables
 skip-networking
-\###################################
+###################################
 ```
 #### Restart MySql
 ```
