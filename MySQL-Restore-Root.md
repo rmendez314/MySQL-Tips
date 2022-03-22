@@ -13,9 +13,10 @@ sudo vi /etc/mysql/my.cnf
 skip-grant-tables
 skip-networking
 \###################################
-
-sudo services mysql restart
 ```
+#### Restart MySql
+sudo services mysql restart
+
 ### Connect to the mysqld server with just: mysql (i.e. no -p option, and username may not be required).
 
 #### Issue the following commands in the mysql client:
