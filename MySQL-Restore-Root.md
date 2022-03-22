@@ -22,7 +22,9 @@ sudo services mysql restart
 
 #### Issue the following commands in the mysql client:
 ```
-UPDATE mysql.user SET Grant_priv='Y', Super_priv='Y' WHERE User='root'; FLUSH PRIVILEGES;
+UPDATE mysql.user SET Grant_priv='Y', Super_priv='Y' WHERE User='root';
+
+FLUSH PRIVILEGES;
 
 GRANT ALL ON *.* TO 'root'@'localhost';
 ```
