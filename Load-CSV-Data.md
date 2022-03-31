@@ -33,8 +33,8 @@ INTO TABLE table_name
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
 LINES TERMINATED BY '/n'
-IGNORE 1 ROWS;
-(column_1, column_2, column_3, column_4)
+IGNORE 1 ROWS
+(column_1, column_2, column_3, column_4);
 ```
 - LOAD DATA INFILE – Defines the location of the CSV file to be imported. Change the path (between the quotes) to match the path and filename of your CSV file. If the CSV file is located on the local machine, you can use the LOAD DATA LOCAL INFILE statement instead.
 - INTO TABLE – This indicates the destination table you are importing the CSV file into. Change the table_name to the name of your table.
